@@ -41,10 +41,10 @@ def main():
     #max_area = st.sidebar.slider("Maximum Area (sqft)", 100, 2000, 2000)
 
     bedrooms = st.sidebar.slider("Number of Bedrooms", min_value=1, max_value=10, value=1)
-    min_price = st.sidebar.slider("Minimum Price", min_value=data["price"].min(), max_value=data["price"].max(), value=data["price"].min())
-    max_price = st.sidebar.slider("Maximum Price", min_value=data["price"].min(), max_value=data["price"].max(), value=data["price"].max())
-    min_area = st.sidebar.slider("Minimum Area (sqft)", min_value=data["area"].min(), max_value=data["area"].max(), value=data["area"].min())
-    max_area = st.sidebar.slider("Maximum Area (sqft)", min_value=data["area"].min(), max_value=data["area"].max(), value=data["area"].max())
+    min_price = st.sidebar.slider("Minimum Price", min_value=int(data["price"].min()), max_value=int(data["price"].max()), value=int(data["price"].min()))
+    max_price = st.sidebar.slider("Maximum Price", min_value=int(data["price"].min(), max_value=int(data["price"].max()), value=int(data["price"].max()))
+    min_area = st.sidebar.slider("Minimum Area (sqft)", min_value=int(data["area"].min()), max_value=int(data["area"].max()), value=int(data["area"].min()))
+    max_area = st.sidebar.slider("Maximum Area (sqft)", min_value=int(data["area"].min()), max_value=int(data["area"].max()), value=int(data["area"].max()))
     
 # Filter the data based on the selected values
 
